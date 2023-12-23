@@ -1,0 +1,46 @@
+﻿@using projev2.Models
+
+@model login
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<div id="mainLayer">
+    <script src="~/Scripts/login.js" type="text/javascript"></script>
+
+    <a href=@Url.Action("home","Home")><img src="~/Content/assets/logoyeni.png" style="z-index: 2; left: 2%; top: 2%; height:10% ; width: 12%;position:absolute ;"></a>
+
+    <div class="menuBar">
+        <ul>
+            <li><a href=@Url.Action("login","Home")>Login</a></li>
+            <li><a href=@Url.Action("home","Home")>Home Page</a></li>
+            <li><a href=@Url.Action("about","Home")>About Us</a></li>
+            <li><a href=@Url.Action("contact","Home")>Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="loginLayer">
+
+
+     
+        <form name="login" id="login" method="post" onsubmit="return loginForm()">
+            <p>Login Box</p>
+
+            @Html.DropDownListFor(m => m.LoginType, new SelectList(Enum.GetValues(typeof(type))), "Select Login Type")
+            <br /><br />
+
+            <p>Username     : @Html.TextBoxFor(m => m.username)</p>
+            <br />
+
+            <p>
+                Password     : @Html.PasswordFor(m => m.password)
+            </p>
+            <br />
+            <button class="button">Login</button>
+        </form>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,165 @@
+﻿
+@{
+    ViewBag.Title = "TeacherAttendance";
+}
+
+<div id="mainLayer">
+
+    <a href=@Url.Action("home","Home")><img src="~/Content/assets/logoyeni.png" style="z-index: 2; left: 2%; top: 2%; height:10% ; width: 12%;position:absolute ;"></a>
+
+
+
+    <div class="menuBar">
+        <ul>
+            <li><a href=@Url.Action("home","Home")>Home Page</a></li>
+            <li><a href=@Url.Action("teacherAttendance","Home")>Attendance History</a></li>
+            <li><a href=@Url.Action("teacherPast","Home")>Attendance History</a></li>
+            <li><a href=@Url.Action("about","Home")>About Us</a></li>
+            <li><a href=@Url.Action("contact","Home")>Contact</a></li>
+            <li><a href=@Url.Action("home","Home")>Log Out</a></li>
+        </ul>
+    </div>
+
+
+    <div id="attendanceLayer">
+       <h3>11.01.2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=@Url.Action("teacherPast","Home")> <button>  See Past Attendance</button></a> </h3>
+
+       <form name="login" id="login" method="post" onsubmit="return loginForm()">
+           @*
+        <div id="tableLayer" >
+
+            <table id="tableLayer">
+                <tr>
+                    <th>Student Number</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Present</th>
+                    <th>Late</th>
+                    <th>Absent</th>
+                </tr>
+               @foreach(string student in Students)
+                <tr>
+                    <td>@student.id</td>
+                    <td>@student.name</td>
+                    <td><input type="checkbox" value="present"></input></td>
+                    <td><input type="checkbox" value="late"></input></td>
+                    <td><input type="checkbox" value="absent"></input></td>
+                </tr>
+
+           *@
+
+           <div id="tableLayer">
+
+               <table id="tableLayer">
+                   <tr>
+                       <th>Student Number</th>
+                       <th>Name</th>
+                       <th>Surname</th>
+                       <th>Present</th>
+                       <th>Late</th>
+                       <th>Absent</th>
+                   </tr>
+                   <tr>
+                       <td>220</td>
+                       <td>Sena</td>
+                       <td>Cabuk</td>
+                       <td><input type="checkbox" value="present"></input></td>
+                       <td><input type="checkbox" value="late"></input></td>
+                       <td><input type="checkbox" value="absent"></input></td>
+                   </tr>
+                   <tr>
+                       <td>221 </td>
+                       <td>Nisanur </td>
+                       <td>Salkaya</td>
+
+                       <td><input type="checkbox" value="present"></input></td>
+                       <td><input type="checkbox" value="late"></input></td>
+                       <td><input type="checkbox" value="absent"></input></td>
+                   </tr>
+                   <tr>
+                       <td>222</td>
+                       <td>Saim</td>
+                       <td>Uvez</td>
+
+                       <td><input type="checkbox" value="present"></input></td>
+                       <td><input type="checkbox" value="late"> </td>
+                       <td><input type="checkbox" value="absent"> </td>
+                   </tr>
+                   <tr>
+                       <td>223</td>
+                       <td>Arda</td>
+                       <td>Deniz</td>
+
+                       <td><input type="checkbox" value="present"></input></td>
+                       <td><input type="checkbox" value="late"></input></td>
+                       <td><input type="checkbox" value="absent"></input></td>
+                   </tr>
+                   <tr>
+                       <td>224 </td>
+                       <td>Samet</td>
+                       <td>Umut</td>
+
+                       <td><input type="checkbox" value="present"></input></td>
+                       <td><input type="checkbox" value="late"></input></td>
+                       <td><input type="checkbox" value="absent"></input></td>
+                   </tr>
+                   <tr>
+                       <td>225</td>
+                       <td>Ricardo</td>
+                       <td>Quaresma</td>
+
+                       <td><input type="checkbox" value="present"></input></td>
+                       <td><input type="checkbox" value="late"></input></td>
+                       <td><input type="checkbox" value="absent"></input></td>
+                   </tr>
+                   <tr>
+                       <td>226</td>
+                       <td>Eren</td>
+                       <td>Cevik</td>
+
+                       <td><input type="checkbox" value="present"></input></td>
+                       <td><input type="checkbox" value="late"></input></td>
+                       <td><input type="checkbox" value="absent"></input></td>
+                   </tr>
+                   <tr>
+                       <td>227</td>
+                       <td>Nesrin</td>
+                       <td>Cankaya</td>
+
+                       <td><input type="checkbox" value="present"></input></td>
+                       <td><input type="checkbox" value="late"></input></td>
+                       <td><input type="checkbox" value="absent"></input></td>
+                   </tr>
+                   <tr>
+                       <td>228</td>
+                       <td>Metin</td>
+                       <td>Arslan</td>
+
+                       <td><input type="checkbox" value="present"></input></td>
+                       <td><input type="checkbox" value="late"></input></td>
+                       <td><input type="checkbox" value="absent"></input></td>
+                   </tr>
+                   <tr>
+                       <td>229</td>
+                       <td>Marie</td>
+                       <td>Bertrand</td>
+
+                       <td><input type="checkbox" value="present"></input></td>
+                       <td><input type="checkbox" value="late"></input></td>
+                       <td><input type="checkbox" value="absent"></input></td>
+                   </tr>
+               </table>
+
+
+               <div>
+                   <button class="button">Submit Attendance</button>
+               </div>
+
+           </div>
+       </form>
+    </div>
+
+
+
+
+</div>

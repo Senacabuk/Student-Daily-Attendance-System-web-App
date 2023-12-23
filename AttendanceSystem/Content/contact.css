@@ -1,0 +1,45 @@
+﻿#contactLayer {
+    margin: 5%;
+    padding: 3%;
+    float: left;
+    border: 3px solid white;
+    border-radius: 10%;
+    height: auto;
+    text-align: left;
+    width: 25%;
+    margin-top: 10%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    background-color: #63C2D2;
+}
+
+#ourInfo {
+    background-color: #63C2D2;
+    margin: 5%;
+    padding: 3%;
+    float: left;
+    border: 3px solid white;
+    border-radius: 10%;
+    height: auto;
+    text-align: left;
+    width: 15%;
+    margin-top: 10%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+
+.button {
+    border: 1px;
+    border-radius: 15%;
+    color: white;
+    padding: 2% 6%;
+    background-color: rgb(48, 118, 159);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 3% 3%;
+    cursor: pointer;
+}

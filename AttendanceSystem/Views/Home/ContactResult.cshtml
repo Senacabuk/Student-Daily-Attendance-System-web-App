@@ -1,0 +1,44 @@
+﻿
+@model projev2.Models.contact
+
+@{
+    ViewBag.Title = "ContactResult";
+}
+
+
+
+<div id="mainLayer">
+    <a href=@Url.Action("home","Home")><img src="~/Content/assets/logoyeni.png" style="z-index: 2; left: 2%; top: 2%; height:10% ; width: 12%;position:absolute ;"></a>
+    <script src="~/Scripts/contact.js" type="text/javascript"></script>
+    <div class="menuBar">
+        <ul>
+            <li><a href=@Url.Action("login","Home")>Login</a></li>
+            <li><a href=@Url.Action("home","Home")>Home Page</a></li>
+            <li><a href=@Url.Action("about","Home")>About Us</a></li>
+            <li><a href=@Url.Action("contact","Home")>Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div id="contactLayer">
+     
+
+
+
+                <p>First Name     : @ViewBag.Name</p>
+                <p>Last Name      : @ViewBag.SurName</p>
+                <p>Mail Address   : @ViewBag.Email</p>
+                <p>Tel Number     : @ViewBag.Tel</p>
+                <p>Subject        : @ViewBag.Subject</p>
+                <p>Message        : @ViewBag.Message</p>
+
+
+              
+
+        
+
+
+    </div>
+
+</div>
+

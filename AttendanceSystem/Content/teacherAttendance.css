@@ -1,0 +1,58 @@
+﻿#attendanceLayer {
+    margin: 5%;
+    padding: 3%;
+    float: left;
+    border: 3px solid white;
+    border-radius: 10%;
+    height: auto;
+    text-align: center;
+    width: auto;
+    margin-top: 10%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    margin-left: 30%;
+    color: aliceblue;
+    background-color: rgb(15, 107, 126);
+}
+
+#tableLayer {
+    background-color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+    #tableLayer td, #tableLayer th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #tableLayer tr:nth-child(even) {
+        background-color: moccasin;
+    }
+
+    #tableLayer tr:hover {
+        background-color: silver;
+    }
+
+
+    #tableLayer th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6d;
+        color: brown;
+    }
+
+.button {
+    border: 1px;
+    border-radius: 15%;
+    color: white;
+    padding: 2% 6%;
+    background-color: rgb(48, 118, 159);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 3% 3%;
+    cursor: pointer;
+}

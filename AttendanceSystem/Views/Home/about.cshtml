@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<div id="mainLayer">
+    <a href=@Url.Action("home","Home")><img src="~/Content/assets/logoyeni.png" style="z-index: 2; left: 2%; top: 2%; height:10% ; width: 12%;position:absolute ;"></a>
+
+    <link rel="stylesheet" href="~/Content/contact.css" />
+
+    <div class="menuBar">
+        <ul>
+            <li><a href=@Url.Action("login","Home")>Login</a></li>
+            <li><a href=@Url.Action("home","Home")>Home Page</a></li>
+            <li><a href=@Url.Action("about","Home")>About Us</a></li>
+            <li><a href=@Url.Action("contact","Home")>Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="aboutLayer">
+        <H2 style="color: white; text-align: center;">ABOUT US</H2>
+        <p>
+            Collecting and keeping attendance records one by one is a time-consuming and exhausting process.
+            Processing paper sheets and timesheets, creating charts, problems such as incorrect data entries may arise.
+            For this reason, every organization should have a Attendance management system for its students.
+            Attendance Management Systems allow students to accurately calculate their hours at school.
+            And it also helps to ensure accurate data recording.
+        </p>
+
+    </div>
+
+</div>

@@ -1,0 +1,110 @@
+﻿body {
+    background-color: #b3c7dc;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed
+}
+
+#mainLayer {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menuBar {
+    background-color: #4B91F1;
+    text-align: right;
+    text-decoration: none;
+    width: auto;
+    height: auto;
+}
+
+    .menuBar ul {
+        list-style: none;
+        display: inline-flex;
+    }
+
+        .menuBar ul li {
+            width: auto;
+            margin: 10px;
+            padding: 5px;
+        }
+
+            .menuBar ul li a {
+                text-decoration: none;
+                color: blanchedalmond;
+            }
+
+            .active, .menuBar ul li:hover {
+                background: #5ACFC9;
+                border-radius: 10%;
+            }
+
+#firstLayer {
+    margin: 1%;
+    padding: 2px;
+    float: left;
+    height: auto;
+    text-align: center;
+    width: 30%;
+    margin-top: 10%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+}
+
+#secondLayer {
+    margin: 5px;
+    left: 1%;
+    padding: 1px;
+    float: left;
+    height: auto;
+    position: relative;
+    text-align: center;
+    width: 40%;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    margin-left: 0px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: rgb(196, 239, 246);
+    color: blue;
+    width: 100%;
+    bottom: 0px;
+    position: relative;
+    float: left;
+}
+
+#aboutLayer {
+    margin: 15%;
+    padding: 5%;
+    float: left;
+    border: 3px solid white;
+    border-radius: 10%;
+    height: auto;
+    text-align: left;
+    width: 25%;
+    margin-top: 10%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    margin-left: 35%;
+    background-color: #63C2D2;
+}
+
+
+.content {
+    margin-left: 75px;
+    font-size: 30px;
+}

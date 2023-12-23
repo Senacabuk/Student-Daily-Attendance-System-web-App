@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+
+
+<div id="mainLayer">
+    <a href=@Url.Action("home","Home")><img src="~/Content/assets/logoyeni.png" style="z-index: 2; left: 2%; top: 2%; height:10% ; width: 12%;position:absolute ;"></a>
+    <script src="~/Scripts/contact.js" type="text/javascript"></script>
+    <div class="menuBar">
+        <ul>
+            <li><a href=@Url.Action("login","Home")>Login</a></li>
+            <li><a href=@Url.Action("home","Home")>Home Page</a></li>
+            <li><a href=@Url.Action("about","Home")>About Us</a></li>
+            <li><a href=@Url.Action("contact","Home")>Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="contactLayer">
+        <p style="font-size: 20px; text-align: center; color: white;">Contact Us</p>
+        <hr width="95%" text-align="center" color="red">
+        <form name="form1" id="form1" method="post" onsubmit="return validateForm()">
+            <label for="fname">First Name *</label>
+            <label for="lname" style="padding-left: 4em;">Last Name *</label><br />
+            <input type="text" id="fname" name="firstname" placeholder="Enter your Name">
+            <input type="text" id="lname" name="lastname" placeholder="Enter your Lastname"><br />
+            <label for="mail">Email *</label>
+            <label for="tel" style="padding-left: 7em;">Tel </label><br />
+            <input type="email" id="mail" name="mail" placeholder="Enter your Mail Adress">
+            <input type="tel" id="tel" name="tel" placeholder="(Not Necessarily)"><br />
+            <label for="subject">Subject *</label><br />
+            <input type="text" id="subject" name="subject" placeholder="What is the subject?"><br />
+            <label for="message">Message *</label> <br />
+            <input type="text" id="message" name="message" placeholder="Please, write your message" maxlength="300"
+                   style="width:300px; height:60px;"><br />
+            <div style="text-align: center;">
+                <input class="button" type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+
+    <div id="contactLayer">
+        <p style="font-size: 20px; text-align: center;color: white;">Our Information</p>
+        <hr width="95%" text-align="center" color="red">
+        <p>Phone <a href="tel:+905887776655" style="padding-left:8%;">588-777-66-55</a></p>
+        <p>Email <a href="mailto:info@stu.iku.edu.tr" style="padding-left:12%;">info@stu.iku.edu.tr</a></p>
+        <p>Adress &emsp; Atakoy 7-8-9-10, E5 Karayolu Uzeri Atakoy <br> &emsp;&emsp;&emsp;&emsp;Yerleskesi, 34158 Bakirkoy</p>
+    </div>
+
+
+
+
+
+
+</div>

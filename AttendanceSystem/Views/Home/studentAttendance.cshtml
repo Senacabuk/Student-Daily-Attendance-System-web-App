@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "StudentAttendance";
+}
+
+<div id="mainLayer">
+
+
+    <a href=@Url.Action("home","Home")><img src="~/Content/assets/logoyeni.png" style="z-index: 2; left: 2%; top: 2%; height:10% ; width: 12%;position:absolute ;"></a>
+
+
+    <div class="menuBar">
+        <ul>
+            <li><a href=@Url.Action("home","Home")>Home Page</a></li>
+            <li><a href=@Url.Action("studentAttendance","Home")>Attendance History</a></li>
+            <li><a href=@Url.Action("about","Home")>About Us</a></li>
+            <li><a href=@Url.Action("contact","Home")>Contact</a></li>
+            <li><a href=@Url.Action("home","Home")>Log Out</a></li>
+        </ul>
+    </div>
+
+    <div id="attendanceLayer">
+
+        <h3>Sena Cabuk &nbsp; <input type="week" name="sweek" id="sweek"></h3>
+
+        <table id="tableLayer">
+            @*
+            <div id="tableLayer" >
+
+        <table id="tableLayer">
+            <tr>
+                <th>Date</th>
+                <th>Class Code</th>
+                <th>Situation</th>
+            </tr>
+           @foreach(string student in Students)
+            <tr> if(id==@student.id)
+                {
+                    <td>@student.date</td>
+                    <td>@student.class</td>
+                    <td>@student.state</td>
+                }
+            </tr>
+
+            *@
+            <tr>
+                <th>Date</th>
+                <th>Class Code</th>
+                <th>Situation</th>
+
+            </tr>
+            <tr>
+                <td>14.11.2022</td>
+                <td>5001</td>
+                <td>Absent</td>
+            </tr>
+            <tr>
+                <td>15.11.2022</td>
+                <td>5001</td>
+                <td>Exist</td>
+            </tr>
+            <tr>
+                <td>16.11.2022</td>
+                <td>5001</td>
+                <td>Absent</td>
+            </tr>
+            <tr>
+                <td>17.11.2022</td>
+                <td>5001</td>
+                <td>Exist</td>
+            </tr>
+            <tr>
+                <td>18.11.2022</td>
+                <td>5001</td>
+                <td>Late</td>
+            </tr>
+        </table>
+
+
+    </div>
+
+</div>
+

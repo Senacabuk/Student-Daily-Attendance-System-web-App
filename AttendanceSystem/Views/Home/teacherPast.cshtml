@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "TeacherPast";
+}
+
+<div id="mainLayer">
+
+    <a href=@Url.Action("home","Home")><img src="~/Content/assets/logoyeni.png" style="z-index: 2; left: 2%; top: 2%; height:10% ; width: 12%;position:absolute ;"></a>
+
+
+    <div class="menuBar">
+        <ul>
+
+            <li><a href=@Url.Action("home","Home")>Home Page</a></li>
+            <li><a href=@Url.Action("teacherAttendance","Home")>Attendance Page</a></li>
+            <li><a href=@Url.Action("teacherPast","Home")>Attendance History</a></li>
+            <li><a href=@Url.Action("about","Home")>About Us</a></li>
+            <li><a href=@Url.Action("contact","Home")>Contact</a></li>
+            <li><a href=@Url.Action("home","Home")>Log Out</a></li>
+        </ul>
+    </div>
+
+
+
+    <div id="attendanceLayer">
+        <h3>12.01.2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date"> </h3>
+
+
+        <div id="tableLayer">
+
+            <table id="tableLayer">
+                @*
+        <div id="tableLayer" >
+
+            <table id="tableLayer">
+                <tr>
+                    <th>Student Number</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Situation</th>
+                </tr>
+               @foreach(string student in Students)
+                <tr>
+                    <td>@student.id</td>
+                    <td>@student.name</td>
+                    <td>@student.State</td>,
+                </tr>
+
+                *@
+                <tr>
+                    <th>Student Number</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Situation</th>
+                </tr>
+                <tr>
+                    <td>220</td>
+                    <td>Sena</td>
+                    <td>Cabuk</td>
+                    <td>Late</td>
+                </tr>
+                <tr>
+                    <td>221 </td>
+                    <td>Nisanur </td>
+                    <td>Salkaya</td>
+                    <td>Exist</td>
+
+                </tr>
+                <tr>
+                    <td>222</td>
+                    <td>Saim</td>
+                    <td>Uvez</td>
+                    <td>Exist</td>
+                </tr>
+                <tr>
+                    <td>223</td>
+                    <td>Arda</td>
+                    <td>Deniz</td>
+                    <td>Absent</td>
+
+                </tr>
+                <tr>
+                    <td>224 </td>
+                    <td>Samet</td>
+                    <td>Umut</td>
+                    <td>Late</td>
+
+                </tr>
+                <tr>
+                    <td>225</td>
+                    <td>Ricardo</td>
+                    <td>Quaresma</td>
+                    <td>Exist</td>
+
+                </tr>
+                <tr>
+                    <td>226</td>
+                    <td>Eren</td>
+                    <td>Cevik</td>
+                    <td>Absent</td>
+
+                </tr>
+                <tr>
+                    <td>227</td>
+                    <td>Nesrin</td>
+                    <td>Cankaya</td>
+                    <td>Late</td>
+
+                </tr>
+                <tr>
+                    <td>228</td>
+                    <td>Metin</td>
+                    <td>Arslan</td>
+                    <td>Exist</td>
+                </tr>
+                <tr>
+                    <td>229</td>
+                    <td>Marie</td>
+                    <td>Bertrand</td>
+                    <td>Absent</td>
+                </tr>
+            </table>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,45 @@
+﻿
+@model projev2.Models.contact
+
+@{
+    ViewBag.Title = "Form";
+}
+
+<div id="mainLayer">
+    <a href=@Url.Action("home","Home")><img src="~/Content/assets/logoyeni.png" style="z-index: 2; left: 2%; top: 2%; height:10% ; width: 12%;position:absolute ;"></a>
+    <script src="~/Scripts/contact.js" type="text/javascript"></script>
+    <div class="menuBar">
+        <ul>
+            <li><a href=@Url.Action("login","Home")>Login</a></li>
+            <li><a href=@Url.Action("home","Home")>Home Page</a></li>
+            <li><a href=@Url.Action("about","Home")>About Us</a></li>
+            <li><a href=@Url.Action("contact","Home")>Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div id="contactLayer">
+
+        @using (Html.BeginForm())
+        {
+
+            @Html.ValidationSummary(){
+                <p>First Name     : @Html.TextBoxFor(x => x.Name)</p>
+                <p>Last Name      : @Html.TextBoxFor(x => x.SurName)</p>
+                <p>Mail Address   : @Html.TextBoxFor(x => x.Email)</p>
+                <p>Tel Number     : @Html.TextBoxFor(x => x.Tel)</p>
+                <p>Subject        : @Html.TextBoxFor(x => x.Subject)</p>
+                <p>Message        : @Html.TextBoxFor(x => x.Message)</p>
+
+
+                <div style="text-align: center;">
+                    <input class="button" type="submit" value="Send">
+                </div>
+
+            }
+        }
+    </div>
+
+</div>
+
+
